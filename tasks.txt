@@ -1,0 +1,11 @@
+What is needed:
+Figure out the dynamic data loading, we use S3 files for chartData.
+Add volume.
+Give me a fully running datatables in a html.
+The title of charts
+How to change the background color.
+The ¡°selected¡± period, ¡°2 years¡± for now. 
+If the data file is jsn, what is the format, especially events data.
+
+Data file on S3:
+https://s3.amazonaws.com/aws-website-wodeai-cfi2b/data/MSFT_events.csv
