@@ -131,7 +131,7 @@ BusinessChart.prototype = {
                 }]
             }],
             "panels": [{
-                    "title": "ticketName",
+                    "title": this.ticker,
                     "backgroundColor": "#333333",
                     "plotAreaFillColors": "#334455",
                     "backgroundAlpha": 0.5,
