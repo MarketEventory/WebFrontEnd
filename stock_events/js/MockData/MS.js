@@ -1,0 +1,1 @@
+var chartData = [{"Date":"2017-02-15","open":25.52,"high":25.629999,"low":25.476,"close":25.610001,"volume":444200,"adjprice":25.610001},{"Date":"2017-02-14","open":25.58,"high":25.629999,"low":25.5,"close":25.59,"volume":967600,"adjprice":25.59}];
