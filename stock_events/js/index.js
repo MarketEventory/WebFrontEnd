@@ -1,5 +1,5 @@
 var ticketName = request.getQuerystring('ticker', 'IBM').toUpperCase(),
-    dataSrc = 'http://localhost:8080/stock_events/js/MockData/' + ticketName + '.csv',
+    dataSrc = '/stock_events/js/MockData/' + ticketName + '.csv',
     cvsData = {},
     chart = {};
 
