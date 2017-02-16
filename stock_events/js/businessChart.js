@@ -1,7 +1,7 @@
 var BusinessChart = function() {
     this.ticker = request.getQuerystring('ticker', 'IBM').toUpperCase();
-    this.jsSrc = '/stock_events/js/MockData/' + this.ticker + '.js';
-    this.cvsSrc = '/stock_events/js/MockData/' + this.ticker + '.csv';
+    this.jsSrc = '/js/MockData/' + this.ticker + '.js';
+    this.cvsSrc = '/js/MockData/' + this.ticker + '.csv';
 };
 BusinessChart.prototype = {
     render: function(id) {
