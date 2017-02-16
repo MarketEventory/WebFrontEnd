@@ -10,6 +10,9 @@ BusinessChart.prototype = {
 
         $.getScript(_this.jsSrc, function(data, textStatus, jqxhr) {
             if (textStatus === 'success' && chartData) {
+                chartData = chartData.sort(function (a, b) {
+                    return new Date(a.Date).getTime() - new Date(b.Date).getTime();
+                });
                 _this.createChart(id, data);
             }
         });
