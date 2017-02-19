@@ -6,11 +6,30 @@
     <title>Stock Events</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://www.amcharts.com/lib/3/plugins/export/export.css" type="text/css" media="all" />
-</head>
+    <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.13/css/jquery.dataTables.min.css">
 
-<body>
-    <div id="chartdiv" style="background-color: gray"></div>
-    <div id="talbe-one"></div>
+</head>
+    <div id="chartdiv" style="background-color: white"></div>
+    <<div class="tablebar" style="padding-top: 20px; margin-bottom: 20px; font-size: 24px; font-weight: bold;width: 100%; border-bottom: 2px solid #333">
+        Events Table
+    </div>
+    <div id="talbe-one-container">
+    	<table id="table-one" class="display" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Ticker</th>
+                <th>Title</th>
+                <th>Effective Date</th>
+                <th>Type</th>
+                <th>Daily Return</th>
+                <th>Five Days Return Before</th>
+                <th>Five Days Return After</th>
+            </tr>
+        </thead>
+        <tbody>        	
+        </tbody>
+    	</table>
+    </div>    
 </body>
 <script src="js/amcharts.js"></script>
 <script src="js/serial.js"></script>
@@ -18,8 +37,10 @@
 <script src="js/export.min.js"></script>
 <script src="js/light.js"></script>
 <script src='js/jquery-3.1.1/jquery-3.1.1.min.js'></script>
-<script type="text/javascript" src="js/dataloader.min.js"></script>
-<script type="text/javascript" src="js/request.js"></script>
+<script src="js/dataloader.min.js"></script>
+<script src="js/request.js"></script>
 <script src="js/businessChart.js"></script>
+<script src="js/DataTables-1.10.13/media/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="js/businessTable.js"></script>
 
 </html>
