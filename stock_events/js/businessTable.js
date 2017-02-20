@@ -4,9 +4,9 @@
 // html = template(chartData);
 // $('body').empty().html(html);
 var BusinessTable = function (dom) {
-    this.ticker = request.getQuerystring('ticker', 'IBM').toUpperCase();
+    this.ticker = request.getQuerystring('ticker', 'AAPL').toUpperCase();
     this.eventSrc = '';
-    this.tableHtml = '<table id="table-one" class="display" cellspacing="0" width="100%"><thead><tr><th>Ticker</th><th>Title</th><th>Effective Date</th><th>Type</th><th>Daily Return</th><th>Five Days Return Before</th><th>Five Days Return After</th></tr></thead><tbody>';
+    this.tableHtml = '<table id="table-one" class="display" cellspacing="0" width="100%"><thead><tr><th>Ticker</th><th>Title</th><th>Effective Date</th><th>Type</th><th>Return Daily</th><th>Return 5DAfter</th><th>Return 5DBefore</th></tr></thead><tbody>';
     this.$el = $(this.tableHtml);
     this.dom = dom;    
 };

@@ -1,1 +1,1 @@
-var eventsData = [{"Ticker":"DTV","EffectiveDate":"2016-12-13","Type":"Dividend","Title":"The Firm pays dividend $0.77","DailyReturn":0.016151,"FiveDayReturnAfter":0.018856,"FiveDayReturnBefore":0.016621}];
+var eventsData = [{"Ticker":"DTV","EffectiveDate":"2016-12-13","Type":"Dividend","Title":"The Firm pays dividend $0.77","DailyReturn":"1.61%","FiveDayReturnAfter":"1.88%","FiveDayReturnBefore":"1.66%"}];

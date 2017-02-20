@@ -1,5 +1,5 @@
 $(document).ready(function () {
-    var ticker = request.getQuerystring('ticker', 'IBM').toUpperCase(),
+    var ticker = request.getQuerystring('ticker', 'AAPL').toUpperCase(),
         chart = new BusinessChart(),
         businessTable = new BusinessTable($('#talbe-one-container')),
         tickerList = new TickerList('.left-ticker-panel');
