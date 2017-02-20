@@ -1,5 +1,5 @@
 var BusinessChart = function() {
-    this.ticker = request.getQuerystring('ticker', 'IBM').toUpperCase();
+    this.ticker = request.getQuerystring('ticker', 'AAPL').toUpperCase();
     this.jsSrc = '/js/MockData/' + this.ticker + '.js';
     this.cvsSrc = '/js/MockData/' + this.ticker + '.csv';
 };
@@ -219,22 +219,23 @@ BusinessChart.prototype = {
                     "period": "DD",
                     "count": 10,
                     "label": "10 days",
-                    selected: true
                 }, {
                     "period": "MM",
                     "count": 1,
                     "label": "1 month",
-                    selected: true
                 }, {
                     "period": "YYYY",
                     "count": 1,
                     "selected": true,
                     "label": "1 year"
                 }, {
+                    "period": "YYYY",
+                    "count": 2,
+                    "label": "2 year"
+                },{
                     "period": "YTD",
                     "label": "YTD",
-                    count: 1,
-                    selected: true
+                    count: 1
                 }]
             },
 
