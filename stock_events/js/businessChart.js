@@ -4,9 +4,14 @@ var BusinessChart = function() {
     this.cvsSrc = '/js/MockData/' + this.ticker + '.csv';
 };
 BusinessChart.prototype = {
-    render: function(id) {
+    render: function(id, ticker) {
         var _this = this,
             data = [];
+        $('#' + id).empty();
+        if(ticker) {
+            this.ticker = ticker;
+            this.jsSrc = '/js/MockData/' + this.ticker + '.js';
+        }
 
         $.getScript(_this.jsSrc, function(data, textStatus, jqxhr) {
             if (textStatus === 'success' && chartData) {
@@ -27,7 +32,7 @@ BusinessChart.prototype = {
     createChart: function(id, data) {
         var chart = {};
 
-        chart = AmCharts.makeChart("chartdiv", {
+        chart = AmCharts.makeChart(id, {
             "type": "stock",
             "theme": "light",
             "dataSets": [{
@@ -243,6 +248,3 @@ BusinessChart.prototype = {
         });
     }
 };
-
-var chart = new BusinessChart();
-chart.render('chartdiv');
