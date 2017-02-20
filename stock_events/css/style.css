@@ -1,3 +1,10 @@
+body{
+	font-family: verdana;	
+}
+.header-bar{
+	border-bottom: 2px solid gray;
+	margin-bottom: 3px;
+}
 #chartdiv {
   width: 100%;
   height: 500px;
@@ -22,7 +29,10 @@ button {
     overflow: hidden;
     white-space: nowrap;
   	text-overflow: ellipsis;
+  	font-size: 14px;
+  	margin-top: 3px;
 }
+
 /*
 body{
 	background-color: black;
