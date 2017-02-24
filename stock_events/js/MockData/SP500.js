@@ -404,7 +404,7 @@ var SP500List=
 {Ticker:"XRX",Name:"Xerox Corporation"},
 {Ticker:"NI",Name:"NiSource"},
 {Ticker:"AVY",Name:"Avery Dennison"},
-{Ticker:"NWSA",Name:"News"},
+{Ticker:"NWSA",Name:"News Corp"},
 {Ticker:"JEC",Name:"Jacobs Engineering Group"},
 {Ticker:"PVH",Name:"PVH"},
 {Ticker:"KSS",Name:"Kohl's"},
