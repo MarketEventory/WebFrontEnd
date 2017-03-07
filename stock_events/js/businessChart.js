@@ -179,21 +179,18 @@ BusinessChart.prototype = {
             },
             "periodSelector": {
                 "periods": [{
-                    "period": "DD",
-                    "count": 10,
-                    "label": "10 days"
-            }, {
-                    "period": "MM",
-                    "count": 1,
-                    "label": "1 month"
-            }, {
-                    "period": "YYYY",
-                    "count": 1,
-                    "label": "1 year"
-            }, {
                     "period": "YTD",
                     "label": "YTD"
             }, {
+                    "period": "YYYY",
+                    "count": 1,
+					"selected": true,
+                    "label": "1 year"
+            }, {
+                    "period": "YYYY",
+                    "count": 2,
+                    "label": "2 years"
+            },{
                     "period": "MAX",
                     "label": "MAX"
             }]
