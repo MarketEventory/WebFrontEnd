@@ -189,8 +189,7 @@ BusinessChart.prototype = {
             }, {
                     "period": "YYYY",
                     "count": 1,
-                    "label": "1 year",
-                    "selected": true
+                    "label": "1 year"
             }, {
                     "period": "YTD",
                     "label": "YTD"
