@@ -1,45 +1,127 @@
-body{
-	font-family: verdana;	
-}
-.header-bar{
-	border-bottom: 2px solid gray;
-	margin-bottom: 3px;
-}
-#chartdiv {
-  width: 100%;
-  height: 500px;
-}
-.left-ticker-panel{
-	width: 20%;
-	height: 1000px;
-	float: left;
-	border-right: 1px solid #333;
-	overflow-y: auto;
+body {
+    font-family: verdana;
 }
 
-.right-chart-table-panel{
-	width: 79%;
-	height: 100%;
-	float: left;
-	padding-left: 5px;
+
+/**
+ * Header style start
+ */
+
+.header-bar {
+    border-bottom: 2px solid gray;
+    margin-bottom: 3px;
+    height: 60px;
 }
-button,input {
-	width: 90%;
-	text-align: left;
+.logo {
+	float: left;
+	width: 270px;
+	height: 100%;
+}
+.search-container {
+	position: absolute;
+	left: calc(50% - 200px);
+}
+
+.search-container input[type="text"] {
+    background: url(../img/search-normal.svg) no-repeat 0px 8px #fcfcfc;
+    border: 1px solid #d1d1d1;
+    color: #bebebe;
+    width: 400px;
+    height: 25px;
+    padding: 6px 15px 6px 20px;
+
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -moz-box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.15) inset;
+    -webkit-transition: all 0.7s ease 0s;
+    -moz-transition: all 0.7s ease 0s;
+    -o-transition: all 0.7s ease 0s;
+    transition: all 0.7s ease 0s;
+}
+
+.search-container input[type="text"]:focus {
+    color: #6a6f75;
+    width: 400px;
+    -webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    -moz-box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    box-shadow: 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(0, 0, 0, 0.9) inset;
+    text-shadow: 0 2px 3px rgba(0, 0, 0, 0.1);
+}
+
+.search-container .search-result-item {
+    height: 20px;
+    padding-top: 3px;
+    padding-left: 20px;
+}
+
+.search-container .search-result-item .search-result-item-ticker {
+    width: 100px;
+    display: inline-block;
+}
+
+.search-container .search-result-item .search-result-item-name {
+    width: 300px;
+    display: inline-block;
+}
+
+.search-container .search-result-container {
+    color: white;
+    background-color: black;
+}
+
+/**
+ * Header style end
+ */
+
+
+/**
+ * stock chart style start
+ */
+#chartdiv {
+    width: 100%;
+    height: 500px;
+}
+
+.amcharts-stock-div {
+    z-index: -1;
+}
+
+
+.left-ticker-panel {
+    width: 20%;
+    height: 1000px;
+    float: left;
+    border-right: 1px solid #333;
+    overflow-y: auto;
+}
+
+.right-chart-table-panel {
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding-left: 5px;
+}
+
+button,
+input {
+    width: 90%;
+    text-align: left;
     overflow: hidden;
     white-space: nowrap;
-  	text-overflow: ellipsis;
-  	font-size: 14px;
-  	margin-top: 3px;
+    text-overflow: ellipsis;
+    font-size: 14px;
+    margin-top: 3px;
 }
 
-.ticker-filter{
-	margin-bottom: 5px;
+.ticker-filter {
+    margin-bottom: 5px;
 }
 
-.active-ticker{
-	background-color: #FFFFD4;
+.active-ticker {
+    background-color: #FFFFD4;
 }
+
 
 /*
 body{
@@ -49,6 +131,8 @@ body{
 
 
 */
+
+
 /**
  *  overwrite chart style
 
